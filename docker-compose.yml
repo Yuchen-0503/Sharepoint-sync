@@ -1,0 +1,5 @@
+services:
+  sharepoint-sync:
+    build: .
+    container_name: sharepoint-sync
+    restart: "no"

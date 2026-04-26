@@ -1,0 +1,32 @@
+Give a python script to interact with sharepoint.
+
+
+登录信息
+----------------------------------------
+用户名: chn-ops1@wiscontrolchina.com
+密码: Xut59480123
+
+Sharepoint links:
+----------------------------------------
+link1: https://wiscontrolchina.sharepoint.cn/:x:/r/sites/WISShanghai2/_layouts/15/Doc.aspx?sourcedoc=%7B6A41602F-E95D-4FB7-B175-01F7E9C0A736%7D&file=2025Working%20Sheet.xlsx&action=default&mobileredirect=true
+这个地址有一个文件叫 2025Working Sheet.xlsx，其中只有一个表格：Results-2025
+
+
+link2: https://wiscontrolchina.sharepoint.cn/:x:/r/sites/WISShanghai2/_layouts/15/Doc.aspx?sourcedoc=%7B712640F7-BF87-40A4-8A78-C14CC6B5FB9D%7D&file=Working%20Sheet(2).xlsx&action=default&mobileredirect=true
+这个地址有一个文件叫 Working Sheet(2).xlsx，其中有多个个表格
+
+下面所有粘贴操作，都是粘贴到目标表格的最后一个不为空的行后面
+
+- 打开 link1, 从2025working sheet里
+- 查找所有符合下述条件的行：
+    - K列里是 QINGDAO
+    - S列是大于 4/23/2026 的日期
+  把符合条件的整条复制
+- 打开 link2, 然后打开其中的 working sheet2 里面的 "进行中2026" 这个表
+- 把复制到的内容粘贴到到J列，粘贴在所有数据的下方空行中
+- 对于所有行，把AA列的内容复制到H列，同样把P列的内容复制到I列
+- 根据同一表里的H列的内容作升序排序，排序方式是“展开并排序”;第一行是表头，在排序后不能移动
+- 对于所有行，把V列里除了是 "Supervision of Weighing & SDT" 的复制到B列
+- 把A列不为空的行，整条信息剪切并粘贴到"已出报告"这个表里，添加到最后
+- 把"已出报告"的表格里B列含有"CIQ Classification"的行整行剪切并粘贴到"共同分级"的表格里
+- 把"共同分级"表格里的H列不为空行整行剪切并粘贴到"共同分级已完成"的表格里

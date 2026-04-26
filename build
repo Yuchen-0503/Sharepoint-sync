@@ -1,0 +1,8 @@
+docker buildx build \
+  --platform linux/amd64,linux/arm64 \
+  --push \
+  --tag uchen2006/sharepoint-sync:latest \
+  --tag uchen2006/sharepoint-sync:v1.0 \
+  --cache-from=type=registry,ref=uchen2006/sharepoint-sync:buildcache \
+  --cache-to=type=registry,ref=uchen2006/sharepoint-sync:buildcache,mode=max \
+  .

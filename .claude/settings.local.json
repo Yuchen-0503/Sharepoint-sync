@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(venv/bin/python sharepoint_sync.py)",
+      "Bash(venv/bin/pip install:*)",
+      "Bash(venv/bin/playwright install:*)"
+    ]
+  }
+}
