@@ -1,11 +1,5 @@
 Give a python script to interact with sharepoint.
 
-
-登录信息
-----------------------------------------
-用户名: chn-ops1@wiscontrolchina.com
-密码: Xut59480123
-
 Sharepoint links:
 ----------------------------------------
 link1: https://wiscontrolchina.sharepoint.cn/:x:/r/sites/WISShanghai2/_layouts/15/Doc.aspx?sourcedoc=%7B6A41602F-E95D-4FB7-B175-01F7E9C0A736%7D&file=2025Working%20Sheet.xlsx&action=default&mobileredirect=true

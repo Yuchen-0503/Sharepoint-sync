@@ -15,8 +15,6 @@ from playwright.sync_api import sync_playwright, Page
 
 # ── 配置 ──────────────────────────────────────────────────────────────────────
 SHAREPOINT_SITE = "https://wiscontrolchina.sharepoint.cn/sites/WISShanghai2"
-USERNAME = "chn-ops1@wiscontrolchina.com"
-PASSWORD = "Xut59480123"
 
 FILE1_GUID = "6A41602F-E95D-4FB7-B175-01F7E9C0A736"
 FILE2_GUID = "712640F7-BF87-40A4-8A78-C14CC6B5FB9D"
