@@ -1,5 +1,7 @@
 services:
   sharepoint-sync:
-    build: .
+    image: uchen2006/sharepoint-sync:latest
     container_name: sharepoint-sync
     restart: "no"
+    env_file:
+      - .env

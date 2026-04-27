@@ -43,7 +43,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # 安装 Python 依赖
-RUN pip install --no-cache-dir playwright openpyxl
+RUN pip install --no-cache-dir playwright openpyxl python-dotenv
 
 # 安装 Playwright Chromium 浏览器
 RUN playwright install chromium

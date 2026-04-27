@@ -1,6 +1,6 @@
 """
 SharePoint Excel 数据同步脚本（单 Playwright session 版）
-依赖: pip install playwright openpyxl
+依赖: pip install playwright openpyxl python-dotenv
       playwright install chromium
 """
 
@@ -11,7 +11,12 @@ import base64
 import tempfile
 
 import openpyxl
+from dotenv import load_dotenv
 from playwright.sync_api import sync_playwright, Page
+
+load_dotenv()
+USERNAME = os.environ["USERNAME"]
+PASSWORD = os.environ["PASSWORD"]
 
 # ── 配置 ──────────────────────────────────────────────────────────────────────
 SHAREPOINT_SITE = "https://wiscontrolchina.sharepoint.cn/sites/WISShanghai2"
